@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"></meta>
+<meta http-equiv="Content-Type" content="text/html"></meta>
+<title>Anthologies</title>
+</head>
+<body>
+Insertar:
+<form action="#" th:action="@{/insertar}" th:object="${antology}" method="post">
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name">
+    <input type="text" th:field="*{topic}" id="name">
+    <input type="text" th:field="*{release}" id="name">
+     <input type="submit" value="Add Anthology">   
+</form>
+
+</body>
+</html>
